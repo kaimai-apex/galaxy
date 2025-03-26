@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Psychedelic Search Background",
+  "version": "1.0",
+  "description": "Transform your Google search page into a psychedelic experience",
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "css": ["styles.css"],
+      "js": ["script.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
